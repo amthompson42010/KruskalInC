@@ -78,9 +78,7 @@ int main(int argc, char *argv[]) {
   int *primativeVertexArr = sortVertices(vertexArr, numVertices);
 
   fclose(graphFile);
-printf("flag0\n");
   DA *MST = kruskal(edgeArr, primativeVertexArr, numVertices);
-printf("flag\n");
   DA *adjacencyList = newDA(displayINTEGER);    
   for (i = 0; i < numVertices; i++) {
      NODE *n = newNODE(primativeVertexArr[i], 0, 0);
